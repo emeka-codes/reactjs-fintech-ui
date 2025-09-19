@@ -100,6 +100,7 @@ ul {
   color: white;
   border: none;
   font-family: sans-serif;
+  margin-bottom: 1.5rem;
 }
 .nav-right {
   display: flex;
@@ -129,7 +130,7 @@ ul {
 .hero-right{
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
+  gap: 3rem;
   width: 24vw;
 }
 .card1{
@@ -249,6 +250,11 @@ ul {
   padding: 1rem 2rem;
   margin-top: 4rem;
 }
+.about .about-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
 .about .about-body{
   display: flex;
   justify-content: space-between;
@@ -269,4 +275,170 @@ ul {
   display: flex;
   flex-direction: column;
  
+}
+.about .values ul{
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.about .values ul li{
+  margin-bottom: 0.5rem;
+}
+.about .about-us-button{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.about .about-body-right-bottom{
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  
+}
+.service-button2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(235, 119, 119);
+  width: 12rem;
+  height: 3rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.impact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 8rem;
+}
+.impact h5{
+  display: flex;
+  justify-content: center;
+}
+#features{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+    align-items: center;
+}
+#features .bottom-features{
+    display: flex;
+    gap: 2rem;
+    width: 100vw;
+    justify-content: space-between;
+    margin-top: 80px;
+    
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.bg-pic{
+    width: 20rem;
+    height: 12rem;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sme{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 16px;
+    position: absolute;
+    bottom: 0.5rem;
+}
+.sme h6{
+    color: white;
+}
+.first-card img{
+    border-radius: 20px;
+}
+.second-card img{
+    border-radius: 20px;
+}
+.third-card img{
+    border-radius: 20px;
+}
+.fourth-card img{
+    border-radius: 20px;
+}
+#features .bottom-features .first-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20rem;
+    height: 12rem;
+    align-items: center;
+    border-radius: 20px;
+}
+#features .bottom-features .second-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20rem;
+    height: 12rem;
+    align-items: center;
+}
+#features .bottom-features .third-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20rem;
+    height: 12rem;
+    align-items: center;
+}
+#features .bottom-features .fourth-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20rem;
+    height: 12rem;
+    align-items: center;
+}
+
+#mobile-app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 64px;
+    margin-top: 200px;
+    
+    background-color: #e55d87;
+
+}
+#mobile-app .left-mobile-app{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 40vw;
+}
+
+#mobile-app .left-mobile-app h2{
+    color: white;
+}
+#mobile-app .left-mobile-app h5{
+    color: white;
+}
+#mobile-app .right-mobile-app{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+#mobile-app .right-mobile-app img{
+    border-radius: 20px;
+}
+#mobile-app .right-mobile-app .google-play{
+    width: 14rem;
+    height: 4rem;
+}
+#mobile-app .right-mobile-app .app-store{
+    width: 14rem;
+    height: 4rem;
 }

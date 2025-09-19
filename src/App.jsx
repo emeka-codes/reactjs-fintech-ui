@@ -5,6 +5,11 @@ import Hero from './Hero.jsx';
 import logo from './assets/AceBankLogo.png';
 import aboutImage from './assets/AceBankAboutUsPicture.png';
 import heroImage from './assets/AceBankHeroPhoto.png';
+import aceBankFeatures1 from './assets/AceBankFeatures1.jfif';
+import aceBankFeatures2 from './assets/AceBankFeatures2.jfif';
+import aceBankFeatures3 from './assets/AceBankFeatures3.jfif';
+import AppStoreLogo from './assets/AppStoreLogo.jpg';
+import GooglePlayLogo from './assets/GooglePlayLogo2.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
@@ -12,6 +17,7 @@ import { faSackDollar } from "@fortawesome/free-solid-svg-icons";
 import { faWallet } from "@fortawesome/free-solid-svg-icons";
 import { faPlaneUp } from '@fortawesome/free-solid-svg-icons';
 import Card from './Card.jsx';
+
 
 
 
@@ -23,7 +29,7 @@ function App(){
       <Navbar img={logo} />
       <Hero img={heroImage} />
 
-      <div className= "services">
+      <section className= "services">
         <div className= "left-service">
           <h2>What Exactly Do We Offer?</h2>
           <h5>At Ace Bank, we provide a full suite of financial solutions tailored to meet your needs. From secure savings accounts and flexible loans to cutting-edge digital banking services and personalized wealth management, we're here to help you achieve your financial goals with ease and confidence</h5>
@@ -40,9 +46,9 @@ function App(){
 
           
          </div>
-      </div>
+      </section>
 
-      <div className= "about">
+      <section className= "about">
         <div className= "about-title">
           <h2>What Are We All About</h2>
         </div>
@@ -64,9 +70,9 @@ function App(){
               <ul>{valuesList}</ul>
             </div>
             <div className='about-body-right-bottom'>
-              <div className= "service-button">
-              <h6>Learn more</h6>
-              <FontAwesomeIcon icon={faArrowRight} className="arrow-icon"/>
+              <div className= "service-button2">
+                <h6>Learn more</h6>
+                <FontAwesomeIcon icon={faArrowRight} className="arrow-icon"/>
               </div>
               <div className='about-us-button'>
                 <h6>About Us</h6>
@@ -75,7 +81,76 @@ function App(){
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className= "impact">
+        <h2>Our Impact in <br />Numbers</h2>
+        <h5>2 M + Active <br /> Customers</h5>
+        <h5>60+ Customers</h5>
+        <h5>20+ Global <br />Partners</h5>
+      </section>
+
+      <section id="features">
+        <div className="top-features">
+            <h2>Explore Our Standout Features</h2>
+        </div>
+        <div className="bottom-features">
+            <div className="first-card">
+                <div className="bg-pic">
+                    <img src={aceBankFeatures3}/>
+                </div>
+                <div className="sme">
+                    <h6>Small and Medium<br />Enterprises</h6>
+                    <FontAwesomeIcon icon={faArrowRight} className='arrow-icon' />
+                </div>
+
+            </div>
+            <div className="second-card">
+                <div className="bg-pic">
+                    <img src={aceBankFeatures2}/>
+                </div>
+                <div className="sme">
+                    <h6>Corporate Banking</h6>
+                    <FontAwesomeIcon icon={faArrowRight} className='arrow-icon' />
+                </div>
+            </div>
+            <div className="third-card">
+                <div className="bg-pic">
+                    <img src={aceBankFeatures1}/>
+                </div>
+                <div className="sme">
+                    <h6>Personal Banking</h6>
+                    <FontAwesomeIcon icon={faArrowRight} className='arrow-icon' />
+                </div>
+
+            </div>
+            <div className="fourth-card">
+                <div className="bg-pic">
+                    <img src={aboutImage}/>
+                </div>
+                <div className="sme">
+                    <h6>Investment Banking</h6>
+                    <FontAwesomeIcon icon={faArrowRight} className='arrow-icon' />
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="mobile-app">
+        <div className="left-mobile-app">
+            <h2>Download Our<br />Mobile App </h2>
+            <h5>Ace Bank is available for Android, IOS and Web. Open an account today</h5>
+        </div>
+        <div className="right-mobile-app">
+            <div className="google-play">
+              <img src={GooglePlayLogo}/>
+            </div>
+            <div className="app-store">
+              <img src={AppStoreLogo}/>
+            </div>
+        </div>
+      </section>
+
 
     </>
   );
