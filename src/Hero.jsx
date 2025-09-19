@@ -2,6 +2,8 @@ import Button from "./Button.jsx";
 import Card from "./Card.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
+
 
 const Hero= ({ img }) => {
     return(
@@ -19,7 +21,7 @@ const Hero= ({ img }) => {
             <div className="hero-right">
                 <Card 
                     cardClass= 'card1' 
-                    texts= {[{text: "New Users", className: "firstText"}, {text: "60K +", className: "secondText"}, {text: "110%", className: "thirdText", withIcon: true}]}
+                    texts= {[{text: "New Users", className: "firstText"}, {text: "60K +", className: "secondText"}, {text: "110%", className: "thirdText", iconStyle: "iconStyle", withIcon: true, icon: faCaretUp}]}
                 />
                 <div className= "hero-button">
                     <h6>Online banking</h6>
@@ -38,7 +40,6 @@ const Hero= ({ img }) => {
 
             </div>
         
-            
     );
 }
 
